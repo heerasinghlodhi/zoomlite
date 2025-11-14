@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZoomLite</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ZoomLite</h1>
+    <input type="text" id="roomId" placeholder="Room ID daal" />
+    <button onclick="joinRoom()">Join Call</button>
+
+    <div id="videoGrid"></div>
+
+    <div class="controls">
+      <button id="muteBtn" onclick="toggleMute()">Mute</button>
+      <button id="videoBtn" onclick="toggleVideo()">Camera</button>
+      <button id="endBtn" onclick="endCall()">End Call</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
